@@ -1,21 +1,40 @@
 {
   "name": "styled-button-group",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.6",
+  "private": false,
+  "main": "dist/index.js",
+  "description": "A customizable button list to render a large number of buttons",
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/abdullah-jaffer/styled-button-group"
+},
+"keywords": [
+  "react",
+  "buttons",
+  "list",
+  "customizable"
+],
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "license": "MIT",
+  "author": "Abdullah Jaffer",
+    "bugs": {
+        "url": "https://github.com/abdullah-jaffer/styled-button-group"
+    },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "del -rf dist && mkdir dist &&  babel src/component -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +53,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/preset-react": "^7.14.5"
   }
 }
