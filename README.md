@@ -17,12 +17,12 @@ or
 ``` 
 import SelectionList from 'styled-button-group';
 
-const getUpdatedList = (name, selected, index, updatedList) => {
+function App() {
+  const getUpdatedList = (name, selected, index, updatedList) => {
   console.log(`${name} ${selected} ${index}`);
   console.log(updatedList);
 };
 
-function App() {
   return (
     <SelectionList
       data={[
