@@ -12,6 +12,9 @@ or
 
     yarn add styled-button-group
 
+## Preview
+
+![clickable items](img/example.gif)
 ## Usage
 
 ``` 
